@@ -13,10 +13,7 @@ class Mupen64plusVideoGlide64mk2 < Formula
 
   def install
     cd "projects/unix" do
-      system "make", "all", "PREFIX=#{prefix}", "C_INCLUDE_PATH=/usr/local/include", "CPLUS_INCLUDE_PATH=/usr/local/include", "V=1"
-      cp "mupen64plus-video-glide64mk2.dylib", "/usr/local/lib/mupen64plus/"
+      system "make", "install", "PREFIX=#{prefix}", "C_INCLUDE_PATH=/usr/local/include", "CPLUS_INCLUDE_PATH=/usr/local/include", "V=1"
     end
-
-    cp "data/Glide64mk2.ini", "/usr/local/share/mupen64plus/"
   end
 end
