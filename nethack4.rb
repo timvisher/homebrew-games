@@ -6,6 +6,8 @@ class Nethack4 < Formula
   sha1 "1f1b11cf5748b58926b354fae763e80df4f63372"
   version "4.3.0-beta1"
 
+  depends_on "libpng"
+
   head "https://gitorious.org/nitrohack/ais523.git", :branch => "nicehack"
 
   # Assumes C11 _Noreturn is available for clang:
