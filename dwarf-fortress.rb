@@ -16,7 +16,6 @@ class DwarfFortress < Formula
   end
 
   def caveats; <<-EOS.undent
-    Requires an X11 environmment. Consider installing XQuartz via `brew cask install xquartz`
     If you're using a retina display, you should probably change the PRINT_MODE to STANDARD in #{libexec}/data/init/init.txt
     EOS
   end
