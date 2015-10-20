@@ -17,8 +17,12 @@ class DwarfFortress < Formula
   end
 
   def caveats; <<-EOS.undent
-      If you're using a retina display, the PRINT_MODE should
-      be changed to STANDARD in #{libexec}/data/init/init.txt
+    If you're using a retina display, the PRINT_MODE should
+    be changed to STANDARD in #{libexec}/data/init/init.txt
+
+    Dwarf Fortress currently references freetype at a deprecated
+    location if installed on 10.11. `brew reinstall freetype
+    --universal` may help.
     EOS
   end
 end
